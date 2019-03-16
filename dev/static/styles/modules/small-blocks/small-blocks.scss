@@ -1,0 +1,78 @@
+.burger{
+	&__body{
+		display: flex;
+		flex-direction: column;
+		align-content:   center;
+	}
+	&__img{
+		// max-width: 160px;
+		// max-height: 135px;
+		margin: auto;
+		width: 100%;
+		height: auto;
+		display: block;
+		&_1{
+			width: 161px;
+			height: 150px;
+		}
+		&_2{
+			margin-top: -4px;
+			width: 161px;
+			height: 154px;
+			position: relative;
+			bottom: -10px;
+		}
+		&_3{
+			width: 164px;
+			margin-top: 18px;
+			height: 132px;
+			position: relative;
+		}
+	}
+	
+	&__name{
+		color:  $primary;
+		font-size: 1.4rem;
+		font-weight: 400;
+		text-align: center;
+
+	}
+
+	&__text{
+		text-align: center;
+		font-size: 0.75rem;
+		max-width: 160px;
+		margin: auto;
+		margin-bottom: 0.5rem;
+	}
+}
+
+
+.bookBurg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 162px;
+	margin: auto;
+	padding-top: 4px;	
+	padding-bottom:  4px;
+	border-radius: 0px;	
+	border: 0px;
+	&__img{
+		width: 20px;
+		height: 20px;
+		display: inline-block;
+	}
+	&__kilo{
+		font-size: 0.75rem;
+		color: $black;
+
+	}
+	&__price{
+		font-size: 1.25rem;
+		line-height: 0.8;
+		color: $black;
+		font-family: 'Rubik';
+		font-weight: 400;
+	}
+}

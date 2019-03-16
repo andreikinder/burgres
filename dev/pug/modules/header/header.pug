@@ -1,0 +1,26 @@
+header.header
+	.container
+		nav.navbar.navbar-expand-md.px-0
+			a.navbar-brand(href="#")
+				img(src="static/images/general/Logo.png")
+				span.sr-only burgers.go
+			button.navbar-toggler.border(	type="button" 
+									data-toggle="collapse"
+									data-target="#mainNavbar"
+									aria-controls="mainNavbar"
+									aria-expanded="false"
+									arai-label="Toggle navigation"
+								 )
+					+icon('hamburger-solid','navbar-toggler-icon ')
+			#mainNavbar.collapse.navbar-collapse.align-self-end
+				ul.navbar-nav.ml-auto.align-items-end.mt-2.mt-md-0
+					li.nav-item.active.mr-md-3.mb-2.mb-md-0
+						a.nav-link(href="#" ) Home
+					li.nav-item.mr-md-3.mb-2.mb-md-0
+						a.nav-link(href="#") Our Burgers
+					li.nav-item.mr-md-3.mb-2.mb-md-0
+						a.nav-link(href="#") What Else?
+					li.nav-item.mr-md-3.mb-2.mb-md-0
+						a.nav-link(href="#") Photos
+					li.nav-item
+						a.nav-link(href="#") Contact

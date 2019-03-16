@@ -1,0 +1,24 @@
+.nav-link{
+	color: $gray-100;
+}
+.navbar{
+	.active{
+		.nav-link{
+			font-weight: 700;
+			border-bottom: 3px solid $primary;
+		}
+	}
+	.nav{
+		&-link{
+			color: $black;
+			border-bottom: 3px solid $white;
+			transition:  all ease 0.15s;
+			line-height: 1;
+		}
+		&-item:hover .nav-link{
+			border-color: $primary;
+			transition:  all ease 0.15s;
+		}
+	}
+}
+	

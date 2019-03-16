@@ -1,0 +1,48 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+
+html {
+  font-size: $base-font-size;
+  font-family: 'Martel';
+  height: 100%;
+}
+
+body { height: 100%; }
+
+h1, h2, h3, h4, h5, h6 { margin: 0;
+	font-family: 'Rubik';
+ }
+
+.burgers{
+	padding-top: 5.625rem;
+	padding-bottom: 6.25rem;
+	border: 1px solid $blue;
+}
+
+.wait{
+	background: no-repeat url('../images/content/wait_bg.jpg');
+	background-position: -100px auto;
+	background-size: cover;
+	height: 940px;
+	position: relative;	
+	z-index: 2;
+
+	&:after{
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		background: linear-gradient(to bottom, #0b1d2c 20%, #b8741e); 
+		opacity: 0.8; 
+		z-index: 9;
+	}
+
+}
+
+//Модули
+@import "modules/modules";

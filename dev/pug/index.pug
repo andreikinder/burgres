@@ -1,0 +1,66 @@
+extends template/main
+
+block variables
+	- var title = 'burger.co'
+	- var pageClass = 'index-page'
+
+block content
+	//- section.hero.d-flex
+	//- 	.w-50
+	//- 		h1.display-4 We create Burgers.
+	//- 		p Beautiful hand crafted burgers with tangy sauce lettuce, onions, pickles and our specials
+
+	//- 	.w-50
+	//- 		h1.display-4 Delicious
+	//- 		p Oh, yes as are made with hands and chef loves them to the core.
+	//- 		.d-flex
+	//- 			span Are they really?
+	//- 			button.btn.btn-light Show me 
+	//- 			//+icon('barbecue','mode')
+
+	// burgers
+	section.burgers
+		.container 
+			.row.justify-content-center.align-strech
+				.col-md-4.col-lg-3.mb-4.mb-md-0
+					.burger.position-relative
+						img.burger__img.burger__img_1.mb-2.mb-md-4(src="static/images/content/burger_1.png")
+						.burger__body
+							h5.burger__name.mb-1.mb-md-2 Beef Bondy
+							p.burger__text Juicy hand cut beef with Mango sauce fries
+							a.burger__btn.btn.bookBurg.btn-light.justify-content-between.stretched-link(href="#")
+								.d-flex
+									img.bookBurg__icon(src="static/images/general/barbecco-icon.png").mr-2
+									span.bookBurg__kilo.mr-2 345 KJ
+								span.bookBurg__price $12.5
+
+
+				.col-md-4.col-lg-3.mb-4.mb-md-0
+					.burger.position-relative
+						img.burger__img.burger__img_2.mb-2.mb-md-4(src="static/images/content/burger_2.png")
+						.burger__body
+							h5.burger__name.mb-1.mb-md-2 Chicken Mota
+							p.burger__text Beautiful chicken breast with salsa sauce on top
+							a.burger__btn.btn.bookBurg.btn-light.justify-content-between.stretched-link(href="#")
+								.d-flex
+									img.bookBurg__icon(src="static/images/general/barbecco-icon.png").mr-2
+									span.bookBurg__kilo.mr-2 345 KJ
+								span.bookBurg__price $9.0
+
+
+				.col-md-4.col-lg-3
+					.burger.position-relative
+						img.burger__img.burger__img_3.mb-2.mb-md-4(src="static/images/content/burger_3.png")
+						.burger__body
+							h5.burger__name.mb-1.mb-md-2 Double Beef
+							p.burger__text Yes! Double patty with  seculent sauce
+							a.burger__btn.btn.bookBurg.btn-light.justify-content-between.stretched-link(href="#")
+								.d-flex
+									img.bookBurg__icon(src="static/images/general/barbecco-icon.png").mr-2
+									span.bookBurg__kilo.mr-2 345 KJ
+								span.bookBurg__price $13.6
+	// burgers end 
+
+	// wait
+	section.wait.w-100
+
