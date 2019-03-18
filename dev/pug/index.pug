@@ -21,8 +21,8 @@ block content
 	// burgers
 	section.burgers
 		.container 
-			.row.justify-content-center.align-strech
-				.col-md-4.col-lg-3.mb-4.mb-md-0
+			.row
+				.col-md-4.mb-4.mb-md-0.d-flex.justify-content-center.justify-content-md-start
 					.burger.position-relative
 						img.burger__img.burger__img_1.mb-2.mb-md-4(src="static/images/content/burger_1.png")
 						.burger__body
@@ -35,7 +35,7 @@ block content
 								span.bookBurg__price $12.5
 
 
-				.col-md-4.col-lg-3.mb-4.mb-md-0
+				.col-md-4.mb-4.mb-md-0
 					.burger.position-relative
 						img.burger__img.burger__img_2.mb-2.mb-md-4(src="static/images/content/burger_2.png")
 						.burger__body
@@ -48,7 +48,7 @@ block content
 								span.bookBurg__price $9.0
 
 
-				.col-md-4.col-lg-3
+				.col-md-4.d-flex.justify-content-center.justify-content-md-end
 					.burger.position-relative
 						img.burger__img.burger__img_3.mb-2.mb-md-4(src="static/images/content/burger_3.png")
 						.burger__body
@@ -63,4 +63,91 @@ block content
 
 	// wait
 	section.wait.w-100
+		.container
+			.row
+				.col-md-7.col-lg-5.col-xl-8.d-flex.align-items-md-center.mb-5.mb-md-0
+					h1.title.text-white Wait! But we also serve ...
 
+				.col-md-5.col-lg-7.col-xl-4.d-flex.justify-content-md-end
+					ul.price-list.list-unstyled
+						li.price-list__item.mb-3.mb-md-4
+							span.price-list__food French Fries
+							span.price-list__price $12
+						li.price-list__item.mb-3.mb-md-4
+							span.price-list__food Cold Drinks
+							span.price-list__price $8
+						li.price-list__item.mb-3.mb-md-4
+							span.price-list__food Love Choclates
+							span.price-list__price $25
+						li.price-list__item.mb-3.mb-md-4
+							span.price-list__food Coleslav
+							span.price-list__price $9
+						li.price-list__item
+							span.price-list__food Lots of Love
+							span.price-list__price Free
+	//wait end
+
+	//photos 
+	section.photos
+		.container
+			h1.title.text-center.mb-2  Photos
+			p.help-title.mb-5 Beautiful pictures clicked by our Customizes
+			.slider
+				div 
+					img(src="static/images/content/Layer 1 copy.jpg")
+				div 
+					img(src="static/images/content/Layer 7 copy 3.jpg")
+				div 
+					img(src="static/images/content/Layer 7.jpg")
+				div 
+					img(src="static/images/content/Layer 1 copy.jpg")
+				div 
+					img(src="static/images/content/Layer 7 copy 3.jpg")
+				div 
+					img(src="static/images/content/Layer 7.jpg")
+				div 
+					img(src="static/images/content/Layer 1 copy.jpg")
+				div 
+					img(src="static/images/content/Layer 7 copy 3.jpg")
+				div 
+					img(src="static/images/content/Layer 7.jpg")
+			.preview
+				div 
+					img(src="static/images/content/Layer 1 copy.jpg")
+				div 
+					img(src="static/images/content/Layer 7 copy 3.jpg")
+				div 
+					img(src="static/images/content/Layer 7.jpg")
+				div 
+					img(src="static/images/content/Layer 1 copy.jpg")
+				div 
+					img(src="static/images/content/Layer 7 copy 3.jpg")
+				div 
+					img(src="static/images/content/Layer 7.jpg")
+				div 
+					img(src="static/images/content/Layer 1 copy.jpg")
+				div 
+					img(src="static/images/content/Layer 7 copy 3.jpg")
+				div 
+					img(src="static/images/content/Layer 7.jpg")
+
+	// photos end 
+
+	//contact 
+	section.contact
+		.container
+			h1.title.text-center.mb-2  Contact Us
+			p.help-title.mb-5 Beautiful pictures clicked by our Customizes
+	.bg_dark-blue
+		.container
+			.row
+				.col-md-6
+					form
+						input.form-control(type="text" placeholder="Name").mb-2
+						input.form-control(type="mail" placeholder="Email").mb-2
+						input.form-control(type="cell" placeholder="tell").mb-2
+						textarea.form-control(placeholder="deliver" ).mb-2
+						input.form-control.btn.btn-primary.text-white(type="submit" value="Submit")
+
+				.col-md-6
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.917602540446!2d144.96279431584483!3d-37.81539894191099!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642b44b0eaffb%3A0xc325beac870b4a2!2zMjcyIENvbGxpbnMgU3QsIE1lbGJvdXJuZSBWSUMgMzAwMCwg0JDQstGB0YLRgNCw0LvQuNGP!5e0!3m2!1sru!2sru!4v1552929706773" width="800" height="450" frameborder="0"  allowfullscreen></iframe>
