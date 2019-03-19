@@ -111,16 +111,34 @@
 
 
 .slider{
+	width: 90%;
+	margin: auto;
 	img{
 		width: 100%;
-		height: 300px;
+		height: auto;
+		max-height: 500px;
 	}
+}
+.preview .slick-current img{
+	box-shadow: 0 0 5px 5px  $primary;
+}
+
+@media screen and (min-width: 768px)  {
+	.slider{
+		width: 100%;
+	}
+
 }
 
 .preview{
+	display: none;
+
 	img{
-		width: 100%;
-		height: 100px;
+		//width: 100%;
+		max-width: 160px;
+		width: 160px;
+		height: 90px;
+		margin: auto;
 	}
 }
 	
