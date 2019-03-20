@@ -6,6 +6,7 @@ $(document).ready(function () {
 	  slidesToScroll: 1,
 	  arrows: true,
       dots: false,
+      initialSlide: 7, 
 	  asNavFor: '.preview',
 	  adaptiveHeight: true,
 	  responsive: [
@@ -25,6 +26,7 @@ $(document).ready(function () {
 	  dots: true,
 	  centerMode: true,
 	  focusOnSelect: true,
+	  initialSlide: 7,
 	   responsive: [
 	  	{
 	      breakpoint: 991,

@@ -110,24 +110,16 @@
 
 
 
+
+// gallery 
 .slider{
 	width: 90%;
 	margin: auto;
 	img{
 		width: 100%;
 		height: auto;
-		max-height: 500px;
+		max-height: 270px;
 	}
-}
-.preview .slick-current img{
-	box-shadow: 0 0 5px 5px  $primary;
-}
-
-@media screen and (min-width: 768px)  {
-	.slider{
-		width: 100%;
-	}
-
 }
 
 .preview{
@@ -142,3 +134,63 @@
 	}
 }
 	
+
+
+.preview img{
+	border: 5px solid #fff;
+	transition: all ease 0.15s;
+	&:hover{
+		cursor: pointer;
+		border: 5px solid rgba(255, 163, 38, 0.7);
+		transition: all ease 0.15s;
+	}
+}
+
+.preview .slick-current img{
+	border: 5px solid rgba(255, 163, 38, 0.7);
+	transition: all ease 0.15s;
+}
+
+@media screen and (min-width: 768px)  {
+	.slider{
+		width: 100%;
+		img{
+			max-height: 360px;
+		}
+	}
+
+}
+@media screen and (min-width: 992px)  {
+	.slider{
+		img{
+			max-height: 480px;
+		}
+	}
+
+}
+
+@media screen and (min-width: 1200px)  {
+	.slider{
+		img{
+			max-height: 570px;
+		}
+	}
+
+}
+// gallery  end	
+
+
+//contact form
+.contactForm{
+	max-width: 300px;
+	.form-text{
+		color:#fff;
+	}
+	label{
+		color: #fff;
+		margin-bottom: 0.5rem;
+		line-height: 1;
+	}
+}
+
+//contact form end
