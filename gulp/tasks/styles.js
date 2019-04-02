@@ -37,9 +37,9 @@ module.exports = function () {
         return $.gulp.src(stylesPATH.input + 'styles.scss')
             .pipe(scss())
             .pipe(autoprefixer({
-                browsers: ['last 3 version']
+                browsers: ['last 1 version']
             }))
-            .pipe(csscomb())
+            // .pipe(csscomb())
             .pipe(csso())
             .pipe(rename('styles.min.css'))
             .pipe($.gulp.dest(stylesPATH.ouput))

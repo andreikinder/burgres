@@ -3,7 +3,7 @@ let imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     cache = require('gulp-cache'),
     imgPATH = {
-        "input": ["./dev/static/images/**/*.{png,jpg,gif,svg}",
+        "input": ["./dev/static/images/**/*.{png,jpg,gif,svg,ico}",
             '!./dev/static/images/svg/*'],
         "ouput": "./build/static/images/"
     };
@@ -23,7 +23,7 @@ module.exports = function () {
                     loops: 5,
                     min: 70,
                     max: 75,
-                    quality: 'high'
+                    quality: 'medium'
                 }),
                 imagemin.svgo(),
                 imagemin.optipng({optimizationLevel: 3}),

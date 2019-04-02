@@ -115,11 +115,15 @@
 .slider{
 	width: 90%;
 	margin: auto;
-	img{
+		img{
 		width: 100%;
 		height: auto;
 		max-height: 270px;
 	}
+	.slick-dots{
+		bottom: -60px;		
+	}
+
 }
 
 .preview{
@@ -151,6 +155,48 @@
 	transition: all ease 0.15s;
 }
 
+
+// gallery  end	
+
+
+//contact form
+.contactForm{
+	max-width: 100%;
+	width: 100%;
+	.form-text{
+		color:#fff;
+	}
+	label{
+		color: #fff;
+		margin-bottom: 0.5rem;
+		line-height: 1;
+	}
+}
+
+
+
+.form-icon{
+	max-height: 1rem;
+	max-width: 1rem;
+	//fill: $gray-600;
+	fill: $white;
+	
+	line-height: 1;
+	// position: relative;
+	// top: -1px;
+	// &_user{
+	// 	position: relative;
+	// 	top: -3px;
+	// }
+}
+
+//contact form end
+
+.content{
+    position: relative;
+    overflow: auto;
+}
+
 @media screen and (min-width: 768px)  {
 	.slider{
 		width: 100%;
@@ -159,12 +205,23 @@
 		}
 	}
 
+	.contactForm{
+	max-width: 350px;
+	}
+
+	.phoneNum{
+		font-size: 3.3rem;
+	}
+
 }
 @media screen and (min-width: 992px)  {
 	.slider{
 		img{
 			max-height: 480px;
 		}
+	}
+	.address{
+		font-size: 1.25rem;
 	}
 
 }
@@ -177,20 +234,3 @@
 	}
 
 }
-// gallery  end	
-
-
-//contact form
-.contactForm{
-	max-width: 300px;
-	.form-text{
-		color:#fff;
-	}
-	label{
-		color: #fff;
-		margin-bottom: 0.5rem;
-		line-height: 1;
-	}
-}
-
-//contact form end

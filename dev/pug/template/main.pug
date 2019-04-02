@@ -11,19 +11,28 @@ html(lang="ru-RU")
 		<![endif]-->
 		meta(name="viewport" content="width=device-width,initial-scale=1")
 		meta(name="keywords" content="")
+		link(rel="shortcut icon" type="image/ico" href="static/images/general/favicon.ico")
 		link(href="https://fonts.googleapis.com/css?family=Martel:400,700|Rubik:400,500" rel="stylesheet")
 		link(rel="stylesheet" type='text/css' href="static/css/styles.min.css")
 
 		<!--[if lt IE 9]>
 		script(src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js")
 		<![endif]-->
-	body(class=pageClass)
+	body(data-spy="scroll" data-target="#navbar" data-offset="150" class=pageClass )
+		#preloader.preloader
+			.spinner-border.text-primary( role="status")
+			.sr-only Loading
 		.wrapper
 			include ../modules/header/header
-			.content
+			main.content()
 				block content
 			include ../modules/footer/footer
 		script(src="static/js/jquery-3.3.1.min.js")
 		script(src="static/js/libs.min.js")
+		script(src="https://api-maps.yandex.ru/2.1/?apikey=<75a7463f-6554-4291-81ac-8833da531fcb>&lang=ru_US" type="text/javascript")
 		script(src="static/js/main.js")
+
+
 		block script
+
+			

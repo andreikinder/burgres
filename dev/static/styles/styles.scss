@@ -9,7 +9,10 @@ html {
   height: 100%;
 }
 
-body { height: 100%; }
+body { height: 100%;
+	position: relative;
+	overflow: auto;
+ }
 
 h1, h2, h3, h4, h5, h6 { margin: 0;
 	font-family: 'Rubik';
@@ -18,10 +21,72 @@ h1, h2, h3, h4, h5, h6 { margin: 0;
 input, textarea{
 	border: none;
 }
+
+
+.hero{
+	p{
+		max-width: 330px !important;;
+	}
+	h1{
+		font-weight: 500;
+		line-height: 1;
+	}
+	&-1{
+		background: no-repeat url('../images/content/hero_1.jpg');
+		background-size: cover;
+		position: relative;
+		z-index: 2;	
+		padding-top: 6.25rem;
+		padding-bottom: 7.9rem;
+		&:after{
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		content: '';
+		background: #0b1d2c; 
+		opacity: 0.8; 
+		z-index: -1;
+		
+		}
+
+	}
+		
+	&-2{
+		background: no-repeat url('../images/content/hero_2.jpg');
+		background-size: cover;
+		position: relative;	
+		z-index: 2;
+		padding-top: 6.25rem;
+		padding-bottom: 7.9rem;
+		&:after{
+			position: absolute;
+			display: block;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			content: '';
+			background: $primary; 
+			opacity: 0.8; 
+			z-index: -1;
+		}
+	}
+}
+.hamburger_icon{
+	width: 1.5rem;
+	height: 1.5rem;
+	fill: $primary;
+}
+.show_me{
+	background: #fff;
+	box-shadow: 3px 3px 3px 2px rgba(100,100,100, .5)
+}
 .burgers{
 	padding-top: 5.625rem;
 	padding-bottom: 6.25rem;
-	border: 1px solid $blue;
 }
 
 .wait{
@@ -61,6 +126,79 @@ input, textarea{
 .bg_dark-blue{
 	background: $dark-blue;
 }
+
+.phoneNum{
+	font-size: 2.5rem;
+}
+.map{
+	height: 200px;
+	width: 100%;
+}
+
+.mycontainer{
+	max-width: 100%;
+	width: 100%;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+
+.preloader{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 100000;
+	background: #fff;
+	.spinner-border{
+		width: 9rem;
+		height: 9rem;
+	}
+}
+
+
+@include media-breakpoint-up(sm) { 
+	.mycontainer{
+		max-width: 540px;
+	}
+
+
+}
+@include media-breakpoint-up(md) {
+	.mycontainer{
+		max-width: 360px;
+		&_1{
+		margin-right: 0;
+		}
+		&_2{
+		margin-left: 0;
+		}
+	}
+	.navbar-nav{
+		max-width: 100% !important;
+	}
+}
+@include media-breakpoint-up(lg) { 
+	.mycontainer{
+		max-width: 480px;
+	}
+
+ }
+@include media-breakpoint-up(xl) { 
+	.mycontainer{
+		max-width: 570px;
+	}
+
+}
+
+
 
 //Модули
 @import "modules/modules";

@@ -21,8 +21,12 @@ $content-size: 1024px;
 $dark-blue: #0d1624;
 // Fonts
 
+
+
+//@import "../../../dev/static/styles/utils/vars.scss";
 //@import "../../../dev/static/styles/utils/vars";
 
+//@import "../../../dev/static/styles/utils/vars.scss";
 
 //bootstrap
 // Variables
@@ -258,7 +262,7 @@ $grid-gutter-width:           30px;
 $line-height-lg:              1.5;
 $line-height-sm:              1.5;
 
-$border-width:                1px;
+$border-width:                0px;
 $border-color:                $gray-300;
 
 $border-radius:               .25rem;
@@ -416,7 +420,7 @@ $input-btn-font-size:         $font-size-base;
 $input-btn-line-height:       $line-height-base;
 
 $input-btn-focus-width:       .2rem;
-$input-btn-focus-color:       rgba($component-active-bg, .25);
+$input-btn-focus-color:       rgba($component-active-bg, .45);
 $input-btn-focus-box-shadow:  0 0 0 $input-btn-focus-width $input-btn-focus-color;
 
 $input-btn-padding-y-sm:      .25rem;
@@ -698,3 +702,22 @@ $form-validation-states: map-merge(
   ),
   $form-validation-states
 );
+
+
+
+
+
+
+$slick-font-path: "../fonts/" !default;
+$slick-font-family: "slick" !default;
+$slick-loader-path: "../fonts/" !default;
+$slick-arrow-color: $primary !default;
+$slick-dot-color: $dark-blue !default;
+$slick-dot-color-active: $slick-dot-color !default;
+$slick-prev-character: "\2190" !default;
+$slick-next-character: "\2192" !default;
+$slick-dot-character: "\2022" !default;
+$slick-dot-size: 12px !default;
+$slick-opacity-default: 0.75 !default;
+$slick-opacity-on-hover: 1 !default;
+$slick-opacity-not-active: 0.25 !default;

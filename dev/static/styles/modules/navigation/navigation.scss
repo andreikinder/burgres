@@ -2,18 +2,25 @@
 	color: $gray-100;
 }
 .navbar{
-	.active{
-		.nav-link{
-			font-weight: 700;
-			border-bottom: 3px solid $primary;
-		}
+	&-toggler{
+		border: 1px solid #ccc;
 	}
+
 	.nav{
+		max-width: 150px;
 		&-link{
-			color: $black;
+			color: rgba( 0, 0, 0, 0.7);
 			border-bottom: 3px solid $white;
 			transition:  all ease 0.15s;
 			line-height: 1;
+			display: inline-block;
+		}
+		.active{
+			//font-weight: 700;
+			color: rgba( 0, 0, 0, 1);
+			border-bottom: 3px solid $primary;
+			transition:  all ease 0.15s;
+
 		}
 		&-item:hover .nav-link{
 			border-color: $primary;
@@ -21,4 +28,4 @@
 		}
 	}
 }
-	
+
